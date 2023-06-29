@@ -1,6 +1,6 @@
 local Notification = {}
 
-local interface = game:GetObjects('rbxassetid://')[1]
+local interface = game:GetObjects('rbxassetid://13902747445')[1]
 
 if (gethui) then
     interface.Parent = gethui()
