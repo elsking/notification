@@ -86,18 +86,18 @@ function Notification:PostNotification(Options)
 	end)
 
     Notification.Return.MouseEnter:Connect(function()
-        ts:Create(Notification.Return, TweenInfo.new(duration), {
+        ts:Create(Notification.Return, TweenInfo.new(Options.Duration), {
             BackgroundTransparency = 0
         }):Play()
     end)
 
     Notification.Return.MouseLeave:Connect(function()
-        ts:Create(Notification.Return, TweenInfo.new(duration), {
+        ts:Create(Notification.Return, TweenInfo.new(Options.Duration), {
             BackgroundTransparency = 1
         }):Play()
     end)
     
-	ts:Create(Notification.Duration.Time, TweenInfo.new(duration), {
+	ts:Create(Notification.Duration.Time, TweenInfo.new(Options.Duration, {
         Size = Notification.Duration.Size
 	}):Play()
     
