@@ -97,7 +97,7 @@ function Notification:PostNotification(Options)
         }):Play()
     end)
     
-	ts:Create(Notification.Duration.Time, TweenInfo.new(Options.Duration, {
+	ts:Create(Notification.Duration.Time, TweenInfo.new(Options.Duration), {
         Size = Notification.Duration.Size
 	}):Play()
     
