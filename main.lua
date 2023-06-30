@@ -66,7 +66,7 @@ function Notification:PostNotification(Options)
 				continue
 			end
             
-			if (notification.Position.Y.Offset > Notification.Position.Y.Offset) then
+			if (notification.Position.Y.Offset < Notification.Position.Y.Offset) then
 				continue
 			end
             
