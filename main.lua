@@ -43,7 +43,7 @@ function Notification:PostNotification(Options)
     
 	notificationOffset = notificationOffset + notificationHeight + 10
     
-	ts:Create(Notification.Duration.Time, TweenInfo.new(duration, Enum.EasingStyle.Quad), {
+	ts:Create(Notification.Duration.Time, TweenInfo.new(Options.Duration, Enum.EasingStyle.Quad), {
 		Size = Notification.Duration.Size
 	}):Play()
     
